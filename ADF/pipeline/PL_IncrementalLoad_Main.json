@@ -1,6 +1,7 @@
 {
 	"name": "PL_IncrementalLoad_Main",
 	"properties": {
+		"description": "This Pipeline is used to load data incrementally",
 		"activities": [
 			{
 				"name": "LKP_ConfigurationTable",
