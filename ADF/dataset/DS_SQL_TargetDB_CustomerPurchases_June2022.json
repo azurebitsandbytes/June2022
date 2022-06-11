@@ -1,0 +1,31 @@
+{
+	"name": "DS_SQL_TargetDB_CustomerPurchases_June2022",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_SQL_demoss127_targetdb",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "CustomerCode",
+				"type": "varchar"
+			},
+			{
+				"name": "CustomerName",
+				"type": "varchar"
+			},
+			{
+				"name": "ProductCount",
+				"type": "bigint",
+				"precision": 19
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CustomerPurchases_June2022"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
